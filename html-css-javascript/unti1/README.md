@@ -1,0 +1,17 @@
+#Các Thuộc Tính CSS thường dùng là:
+- "color": Đặt màu chữ cho phần tử.
+- "font-size": Đặt kích thước chữ cho phần tử.
+- "font-family": Đặt kiểu chữ cho phần tử.
+- "background-color": Đặt màu nền cho phần tử.
+- "margin": Đặt khoảng cách bên ngoài của phần tử.
+- "padding": Đặt khoảng cách bên trong của phần tử.
+- "border": Đặt đường viền cho phần tử.
+- "width": Đặt chiều rộng của phần tử.
+- "height": Đặt chiều cao của phần tử.
+- "display": Điều chỉnh cách hiển thị của phần tử.
+- "position": Đặt vị trí của phần tử trong tài liệu.
+- "float": Điều chỉnh sự nổi của phần tử.
+- "text-align": Đặt căn chỉnh văn bản bên trong phần tử.
+- "text-decoration": Đặt hiệu ứng trang trí cho văn bản.
+- "transition": Đặt hiệu ứng chuyển đổi cho phần tử.
+- "box-shadow": Đặt hiệu ứng đổ bóng cho phần tử.

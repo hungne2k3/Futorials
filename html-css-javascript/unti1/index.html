@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="./assest/css/responsive.css">
+</head>
+
+<body>
+    <div class="main">
+        <header id="header">
+            <div class="img-logo">
+                <img src="./img/logo 1.png" alt="">
+            </div>
+
+            <nav id="nav">
+                <ul class="nav-list">
+                    <li class="nav-list--item">
+                        <a href="" class="link-item" class="active">Home</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <a href="" class="link-item">About</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <a href="" class="link-item">Tech Stack</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <a href="" class="link-item">Projects</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <span class="link-item" class="active" onclick="openPopup()" style="cursor: pointer;">Contact</span>
+                    </li>
+                </ul>
+
+                <div class="icon-hotline">
+                    <div class="github">
+                        <i class="icon fa-brands fa-github"></i>
+                    </div>
+
+                    <div class="tw">
+                        <i class="icon fa-brands fa-twitter"></i>
+                    </div>
+
+                    <div class="linkend">
+                        <i class="icon fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+                <div class="icon-responsive">
+                    <i class="icon-bars fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- form -->
+        <div class="infor-user hide" id="helloPopup">
+            <form action="" id="form" class="form">
+                <div class="form-ground">
+                    <label for="fullname" class="form-laber">Họ Tên</label>
+
+                    <input id="fullname" type="text" name="fullname"
+                    placeholder="VD:Nguyễn Mạnh Hùng" class="form-control">
+
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-ground">
+                    <label for="email" class="form-laber">Email</label>
+
+                    <input id="email" type="email" name="email" 
+                    placeholder="VD:manhhung@gmail.com"
+                    class="form-control">
+
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-ground">
+                    <label class="form-laber">Tin Nhắn</label>
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ghi Chu"></textarea>
+                </div>
+
+                <div class="close-form">
+                    <button class="button" onclick="closePopup()">
+                        Thoát
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- About -->
+        <article id="about">
+            <div class="introduction">
+                <p class="text-para">Hi 👋,
+                    My name is
+                    <span>Pavan MG</span>
+                    I build things for web
+                </p>
+            </div>
+
+            <div class="img-user">
+                <img width="320px" height="349px" src="./img/user(1).svg" alt="">
+            </div>
+        </article>
+
+        <!-- Tech Stack -->
+        <article id="tech-Stack">
+            <div class="tech-header">
+                <h2 class="tech-text">My Tech Stack</h2>
+            </div>
+
+            <div class="content">
+                <p class="text-pragrap"> Technologies I’ve been working with recently</p>
+            </div>
+
+            <div class="skill">
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/vscode-icons_file-type-html.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/vscode-icons_file-type-css.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/vscode-icons_file-type-js-official.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/logos_react.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/Vector (1).png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/logos_bootstrap.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/akar-icons_github-fill.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/logos_sass.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/Vector.png" alt="">
+                </div>
+                
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/logos_git-icon.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/cib_greensock.png" alt="">
+                </div>
+
+                <div class="tecnology">
+                    <img class="img-skill" src="./img/vscode-icons_file-type-vscode.png" alt="">
+                </div>
+            </div>
+        </article>
+
+        <!-- Projects -->
+        <section class="Projects">
+            <div class="tech-header">
+                <h2 class="tech-text">Projects</h2>
+            </div>
+
+            <div class="content">
+                <p class="text-pragrap">Things I’ve built so far</p>
+            </div>
+
+            <div class="project">
+                <div class="flex-width">
+                    <div class="content-project">
+                        <div class="project-img">
+                            <img src="./img/Rectangle 18.svg" alt="">
+                        </div>
+    
+                        <div class="content-text">
+                            <div class="header">
+                                <h2>Project Tile goes here</h2>
+                            </div>
+    
+                            <div class="paragraph">
+                                <p>
+                                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                                </p>
+                            </div>
+    
+                            <div class="skill-project">
+                                <span class="tech-skill">
+                                    Tech stack : HTML , JavaScript, SASS, React
+                                </span>
+                            </div>
+    
+                            <div class="show-project">
+                                <div class="live-Prevew">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Live Preview</span>
+                                </div>
+    
+                                <div class="view-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>View Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-width">
+                    <div class="content-project">
+                        <div class="project-img">
+                            <img src="./img/Rectangle 16.png" alt="">
+                        </div>
+    
+                        <div class="content-text">
+                            <div class="header">
+                                <h2>Project Tile goes here</h2>
+                            </div>
+    
+                            <div class="paragraph">
+                                <p>
+                                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                                </p>
+                            </div>
+    
+                            <div class="skill-project">
+                                <span class="tech-skill">
+                                    Tech stack : HTML , JavaScript, SASS, React
+                                </span>
+                            </div>
+    
+                            <div class="show-project">
+                                <div class="live-Prevew">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Live Preview</span>
+                                </div>
+    
+                                <div class="view-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>View Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-width">
+                    <div class="content-project">
+                        <div class="project-img">
+                            <img src="./img/Rectangle 8.png" alt="">
+                        </div>
+    
+                        <div class="content-text">
+                            <div class="header">
+                                <h2>Project Tile goes here</h2>
+                            </div>
+    
+                            <div class="paragraph">
+                                <p>
+                                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                                </p>
+                            </div>
+    
+                            <div class="skill-project">
+                                <span class="tech-skill">
+                                    Tech stack : HTML , JavaScript, SASS, React
+                                </span>
+                            </div>
+    
+                            <div class="show-project">
+                                <div class="live-Prevew">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Live Preview</span>
+                                </div>
+    
+                                <div class="view-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>View Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-width">
+                    <div class="content-project">
+                        <div class="project-img">
+                            <img src="./img/Rectangle 24.png" alt="">
+                        </div>
+    
+                        <div class="content-text">
+                            <div class="header">
+                                <h2>Project Tile goes here</h2>
+                            </div>
+    
+                            <div class="paragraph">
+                                <p>
+                                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                                </p>
+                            </div>
+    
+                            <div class="skill-project">
+                                <span class="tech-skill">
+                                    Tech stack : HTML , JavaScript, SASS, React
+                                </span>
+                            </div>
+    
+                            <div class="show-project">
+                                <div class="live-Prevew">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Live Preview</span>
+                                </div>
+    
+                                <div class="view-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>View Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-width">
+                    <div class="content-project">
+                        <div class="project-img">
+                            <img src="./img/Rectangle 23.png" alt="">
+                        </div>
+    
+                        <div class="content-text">
+                            <div class="header">
+                                <h2>Project Tile goes here</h2>
+                            </div>
+    
+                            <div class="paragraph">
+                                <p>
+                                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                                </p>
+                            </div>
+    
+                            <div class="skill-project">
+                                <span class="tech-skill">
+                                    Tech stack : HTML , JavaScript, SASS, React
+                                </span>
+                            </div>
+    
+                            <div class="show-project">
+                                <div class="live-Prevew">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Live Preview</span>
+                                </div>
+    
+                                <div class="view-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>View Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-width">
+                    <div class="content-project">
+                        <div class="project-img">
+                            <img src="./img/Rectangle 22.png" alt="">
+                        </div>
+    
+                        <div class="content-text">
+                            <div class="header">
+                                <h2>Project Tile goes here</h2>
+                            </div>
+    
+                            <div class="paragraph">
+                                <p>
+                                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                                </p>
+                            </div>
+    
+                            <div class="skill-project">
+                                <span class="tech-skill">
+                                    Tech stack : HTML , JavaScript, SASS, React
+                                </span>
+                            </div>
+    
+                            <div class="show-project">
+                                <div class="live-Prevew">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Live Preview</span>
+                                </div>
+    
+                                <div class="view-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>View Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="contact">
+                <div class="logo-footer">
+                    <img src="./img/logo 1_footer.svg" alt="">
+                </div>
+
+                <div class="contact-hotline">
+                    <div class="hotline">
+                        <span>+91 12345 09876</span>
+                    </div>
+
+                    <div class="address-email">
+                        <span>info@example.com</span>
+                    </div>
+
+                    <div class="icon-hotline">
+                        <div class="github">
+                            <i class="icon fa-brands fa-github"></i>
+                        </div>
+    
+                        <div class="tw">
+                            <i class="icon fa-brands fa-twitter"></i>
+                        </div>
+    
+                        <div class="linkend">
+                            <i class="icon fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boder"></div>
+
+            <nav id="nav-2">
+                <ul class="nav-list block">
+                    <li class="nav-list--item">
+                        <a href="" class="link-item" class="active">Home</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <a href="" class="link-item">About</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <a href="" class="link-item">Tech Stack</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <a href="" class="link-item">Projects</a>
+                    </li>
+
+                    <li class="nav-list--item">
+                        <span class="link-item" class="active" onclick="openPopup()" style="cursor: pointer;">Contact</span>
+                    </li>
+                </ul>
+
+                <div class="the-end">
+                    Designed and built by <span class="mg">Pavan MG</span> with <span class="lc">Love & Coffee</span>
+                </div>
+            </nav>
+        </footer>
+
+        <!-- Responsive -->
+        <div class="responsive-menu-mb">
+            <div class="icon-cloes">
+                <i class="icon-closes fa-solid fa-xmark"></i>
+            </div>
+
+            <ul class="nav-list-mb">
+                <li class="nav-list--itemMb">
+                    <a href="" class="link-itemMb" class="active">Home</a>
+                </li>
+
+                <li class="nav-list--itemMb">
+                    <a href="" class="link-itemMb">About</a>
+                </li>
+
+                <li class="nav-list--itemMb">
+                    <a href="" class="link-itemMb">Tech Stack</a>
+                </li>
+
+                <li class="nav-list--itemMb">
+                    <a href="" class="link-itemMb">Projects</a>
+                </li>
+
+                <li class="nav-list--itemMb">
+                    <a href="" class="link-itemMb">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+    <script>
+        // có thể dùng lại trong tương lai hoặc các form khác tương tự
+        Validator({
+                form: '#form',
+                errorSelector: '.form-message',
+                rules: [
+                    // isRequired: bắt buộc điền
+                    // dòng 74 là bắt buộc user phải điền tên vào form.
+                    Validator.isRequired('#fullname', 'Vui long nhap ten day du'),
+                    Validator.isEmail('#email', 'Vui long nhap dung email'),
+                ]
+            });
+    </script>
+</body>
+
+</html>

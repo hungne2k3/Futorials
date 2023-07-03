@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* nav */
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list--item {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-list--item::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0px;
+    background-color: palevioletred;
+    transition: all 0.3s linear;
+}
+
+.nav-list--item:hover::before {
+    width: 100%;
+}
+
+.link-item {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #A7A7A7;
+}
+
+/* form validator*/
+.infor-user {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#form {
+    width: 400px;
+    background: linear-gradient(#13B0F5, #E70FAA);
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 0px 6px 6px rgba(212, 212, 212, 0.4);
+}
+
+.form-ground.invalid .form-control {
+    border-color: #e91538;
+}
+
+.form-ground.invalid .form-message {
+    color: #d93a55;
+}
+
+.popup-outline.hide {
+    display: none;
+}
+
+.infor-user.hide {
+    display: none;
+}
+
+.form-ground {
+    margin-bottom: 14px;
+}
+
+.form-ground label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.form-ground input {
+    width: 366px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.form-ground textarea {
+    outline: none;
+    width: 366px; 
+    height: 157px;
+    border-radius: 4px;
+}
+
+.close-form button {
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(#0ac5cc, #d40a80);
+    color: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.icon-hotline {
+    display: flex;
+}
+
+.active {
+    color: #11101d;
+    background-color: #fefefe;
+}
+
+.icon {
+    width: 30px;
+    font-size: 18px;
+    color: #A7A7A7;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+.icon-bars {
+    color: #D9D9D9;
+    font-size: 26px;
+    display: none;
+    cursor: pointer;
+}
+
+/* About */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+}
+
+.text-para {
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: #D9D9D9;
+}
+
+.text-para span {
+    /* sử dụng linear-gradient để trộn mầu lại với nhau */
+    background: linear-gradient(#13B0F5, #E70FAA);
+    /* sử dụng -webkit-background-clip: text; để chỉ định rằng chữ sẽ trở thành một phần của phần nền gradien */
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; để làm cho màu chữ trong phần tử trở thành trong suốt. */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Tech Stack */
+#tech-Stack {
+    margin-top: 40px;
+}
+
+.tech-header,
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 10px 0 50px 0;
+}
+
+.tech-text {
+    color: #fff;
+}
+
+.text-pragrap {
+    color: #D9D9D9;
+}
+
+/* Tech Stack */ 
+.skill {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1302px;
+    margin: 0 auto;
+}
+
+.tecnology {
+    flex-basis: 14.44444%;
+    margin-bottom: 16px;
+}
+
+.img-skill {
+    width: 100px;
+    height: 100px;
+}
+
+/* Projects */
+.Projects {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1614px;
+}
+
+.flex-width {
+    flex-basis: 26%;
+    margin-bottom: 42px;
+}
+
+.content-project {
+    width: 375px;
+    height: 530px;
+    border-radius: 20px;
+    background-color: #363636;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+.paragraph {
+    color: #ccc;
+    margin-left: 28px;
+    margin-top: 14px;
+}
+
+.paragraph p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.header {
+    color: #ccc;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+
+.skill-project {
+    margin: 20px 0 0 26px;
+}
+
+.tech-skill {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    font-style: normal;
+    color: #CCCCCC;
+}
+
+.show-project {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 26px 0 26px;
+    align-items: center;
+}
+
+.live-Prevew i,
+.live-Prevew span,
+.view-code i,
+.view-code span {
+    color: #CCCCCC;
+}
+
+.live-Prevew span,
+.view-code span {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* footer */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hotline span,
+.address-email span {
+    color: #CCCCCC;
+    margin-right: 30px;
+}
+
+.contact-hotline {
+    display: flex;
+}
+
+/* Responsive */
+.responsive-menu-mb {
+    position: fixed;
+    top: 0; 
+    left: 100%;
+    /* width: 300px; */
+    width: 484px;
+    height: 100vh;
+    z-index: 9999999;
+    padding: 14px 16px 100px;
+    background: linear-gradient(#13B0F5, #E70FAA);
+    transition: 0.5s;
+    display: none;
+}
+
+.open .responsive-menu-mb {
+    /* left: calc(100% - 500px); */
+    left: calc(100% - 684px);
+}
+
+.open .responsive-menu-mb {
+    transform: translateX(202px);
+}
+
+.icon-closes {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.boder {
+    /* width: 100%; */
+    border: 1px solid #CCCCCC;
+    margin: 30px 0 50px 0;
+}
+
+#nav-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.the-end {
+    color: #A7A7A7;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.the-end .mg {
+    background: linear-gradient(#13B0F5, #E70FAA);
+    /* sử dụng -webkit-background-clip: text; để chỉ định rằng chữ sẽ trở thành một phần của phần nền gradien */
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; để làm cho màu chữ trong phần tử trở thành trong suốt. */
+    -webkit-text-fill-color: transparent;
+}
+
+.lc {
+    background: linear-gradient(#6fc3e8, #e90595);
+    /* sử dụng -webkit-background-clip: text; để chỉ định rằng chữ sẽ trở thành một phần của phần nền gradien */
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; để làm cho màu chữ trong phần tử trở thành trong suốt. */
+    -webkit-text-fill-color: transparent;
+}

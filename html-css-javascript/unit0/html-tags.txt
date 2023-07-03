@@ -1,0 +1,22 @@
+- Các thẻ HTML thường được sử dụng là
+
++ <h1> đến <h6>: Định nghĩa các tiêu đề phân cấp theo mức độ quan trọng (h1 là lớn nhất, h6 là nhỏ nhất).
++ <p>: Định nghĩa một đoạn văn bản.
++ <a>: Định nghĩa một liên kết (link) đến một trang web khác hoặc một vị trí trên trang hiện tại.
++ <img>: Định nghĩa một hình ảnh.
++ <div>: Định nghĩa một khối phân cách trong trang.
++ <span>: Định nghĩa một phần tử nhỏ trong văn bản.
++ <ul>: Định nghĩa một danh sách không có thứ tự (unordered list).
++ <ol>: Định nghĩa một danh sách có thứ tự (ordered list).
++ <li>: Định nghĩa một mục trong danh sách (list item).
++ <table>: Định nghĩa một bảng dữ liệu.
++ <tr>: Định nghĩa một hàng trong bảng.
++ <td>: Định nghĩa một ô dữ liệu trong bảng.
++ <form>: Định nghĩa một biểu mẫu để gửi dữ liệu.
++ <input>: Định nghĩa một trường nhập liệu trong biểu mẫu.
++ <button>: Định nghĩa một nút bấm.
++ <label>: Định nghĩa một nhãn cho các trường nhập liệu.
++ <textarea>: Định nghĩa một ô văn bản dùng để nhập nhiều dòng.
++ <select>: Định nghĩa một danh sách thả xuống (dropdown list).
++ <option>: Định nghĩa một tùy chọn trong danh sách thả xuống.
++ <iframe>: Định nghĩa một khung (frame) để nhúng một trang web khác.
