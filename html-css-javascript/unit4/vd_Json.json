@@ -1,0 +1,16 @@
+{
+    "CEO": [
+        {
+            "firstName": "Nguyen", "lastName": "Hung" 
+        }
+    ],
+
+    "employees": [
+        {
+            "firstName": "Nguyen", "lastName": "Chi" 
+        },
+        {
+            "firstName": "Nguyen", "lastName": "Vi" 
+        }
+    ]
+}
