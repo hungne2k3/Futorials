@@ -144,7 +144,7 @@
     <form action="" class="form" id="form-1">
       <div class="form-ground">
 
-        <label for="fullname" class="form-laber">
+        <label for="masv" class="form-laber">
           Mã Sinh Viên:
         </label>
 
@@ -173,6 +173,18 @@
         </label>
 
         <input id="date" name="date" placeholder="VD: 09/02/2003" class="form-control" type="date">
+
+        <span class="form-message"></span>
+
+      </div>
+
+      <div class="form-ground">
+
+        <label for="address" class="form-laber">
+          Địa Chỉ:
+        </label>
+
+        <input id="address" name="address" placeholder="VD: Ha Nam" class="form-control" type="text">
 
         <span class="form-message"></span>
 
@@ -209,6 +221,29 @@
   </div>
 
   <script src="./main.js"></script>
+  <script src="./form_validator.js"></script>
+
+
+  <script>
+    Validator({
+      form: '#form-1',
+      errorSelector: '.form-message',
+
+      rules: [
+        // isRequired: bắt buộc điền
+        Validator.isRequired('#fullname', 'Ho Ten Khong Duoc Nhap Qua 200 Ky Tu'),
+
+        Validator.isDate('#date', 'Nhap dung ngay, thang, nam sinh'),
+
+        Validator.isAddrest('#address', 'Que Quan Khong Duoc Nhap Qua 200 Ky Tu'),
+
+        Validator.isPhoneNumber('#phone-number', 'Số điện thoại đúng định dạng 11 ký tự bắt đầu là 0'),
+
+        Validator.isInput('#input', 'Điểm đầu vào phải từ 0 -> 10')
+      ]
+    });
+  </script>
+
 
 </body>
 
