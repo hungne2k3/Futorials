@@ -79,6 +79,7 @@ function uppdateStudent(id) {
     var masv = document.querySelector('.masv-' + id);
     var name = document.querySelector('.name-' + id);
     var date = document.querySelector('.date-' + id);
+    var address = document.querySelector('.address-' + id);
     var phoneNumber = document.querySelector('.phone-number--' + id);
     var input = document.querySelector('.input-' + id);
     var btn = document.getElementById('create');
@@ -86,6 +87,7 @@ function uppdateStudent(id) {
     var masvInput = document.querySelector('input[name="masv"]');
     var nameInput = document.querySelector('input[name="fullname"]');
     var dateInput = document.querySelector('input[name="date"]');
+    var addressInput = document.querySelector('input[name="address"]');
     var phoneNumberInput = document.querySelector('input[name="phoneNumber"]');
     var inputBock = document.querySelector('input[name="input"]');
 
@@ -94,6 +96,7 @@ function uppdateStudent(id) {
         masvInput.value = masv.innerText;
         nameInput.value = name.innerText;
         dateInput.value = date.innerText;
+        addressInput.value = address.innerText;
         phoneNumberInput.value = phoneNumber.innerText;
         inputBock.value = input.innerText;
         // khi cikc vào sửa thì nút "Create" sẽ chuyển Thành "Save"
@@ -106,6 +109,7 @@ function uppdateStudent(id) {
             masv: masvInput.value,
             name: nameInput.value,
             date: dateInput.value,
+            address: addressInput.value,
             phoneNumber: phoneNumberInput.value,
             input: inputBock.value
         }
@@ -120,6 +124,7 @@ function uppdateStudent(id) {
         masvInput = '';
         nameInput = '';
         dateInput = '';
+        addressInput = '';
         phoneNumberInput = '';
         inputBock = '';
     }
@@ -137,6 +142,7 @@ function renderStudent(students) {
             <th>Mã Sinh Viên</th>
             <th>Họ và tên</th>
             <th>Ngày Sinh</th>
+            <th>Địa Chỉ</th>
             <th>Số Điện Thoại</th>
             <th>Đầu Vào</th>
             <th>UpDate</th>
@@ -152,6 +158,7 @@ function renderStudent(students) {
                 <td class="masv-${student.id}">${student.masv}</td>
                 <td class="name-${student.id}">${student.name}</td>
                 <td class="date-${student.id}">${student.date}</td>
+                <td class="address-${student.id}">${student.address}</td>
                 <td class="phone-number--${student.id}">${student.phoneNumber}</td>
                 <td class="input-${student.id}">${student.input}</td>
 
@@ -177,6 +184,7 @@ function handleCreateStudent() {
         var masv = document.querySelector('input[name="masv"]').value;
         var name = document.querySelector('input[name="fullname"]').value;
         var date = document.querySelector('input[name="date"]').value;
+        var address = document.querySelector('input[name="address"]').value;
         var phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
         var input = document.querySelector('input[name="input"]').value;
 
@@ -185,6 +193,7 @@ function handleCreateStudent() {
             masv: masv,
             name: name,
             date: date,
+            address: address,
             phoneNumber: phoneNumber,
             input: input
         }
